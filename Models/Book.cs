@@ -9,7 +9,7 @@ namespace Models
     /// <summary>
     /// 商品详情
     /// </summary>
-    public class Bookinfo
+    public class Book
     {
         public int Id { get; set; }
 

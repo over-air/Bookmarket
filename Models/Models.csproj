@@ -39,7 +39,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Bookinfo.cs" />
+    <Compile Include="Book.cs" />
     <Compile Include="Img.cs" />
     <Compile Include="Major.cs" />
     <Compile Include="Orderinfo.cs" />
