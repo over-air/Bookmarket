@@ -9,9 +9,9 @@ namespace Models
     /// <summary>
     /// 专业
     /// </summary>
-    class Major
+    public class Major
     {
-        public int Id { get; set; }
+        public int ID { get; set; }
 
         /// <summary>
         /// 专业名称

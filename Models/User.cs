@@ -9,9 +9,9 @@ namespace Models
     /// <summary>
     /// 用户
     /// </summary>
-    class User
+    public class User
     {
-        public int Id { get; set; }
+        public int ID { get; set; }
 
         public string Name { get; set; }
 

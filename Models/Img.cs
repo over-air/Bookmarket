@@ -9,12 +9,23 @@ namespace Models
     /// <summary>
     /// 图片
     /// </summary>
-    class Img
+    public class Img
     {
-        public int Id { get; set; }
+        public int ID { get; set; }
         /// <summary>
         /// 图片相对路径
         /// </summary>
         public string Url { get; set; }
+
+        /// <summary>
+        /// 外键
+        /// </summary>
+        public int ProductID { get; set; }
+
+        /// <summary>
+        /// Navigation Properties
+        /// </summary>
+        public virtual Product Product { get; set; }
+
     }
 }

@@ -9,9 +9,9 @@ namespace Models
     /// <summary>
     /// 商品详情
     /// </summary>
-    public class Book
+    public class Product
     {
-        public int Id { get; set; }
+        public int ID { get; set; }
 
         /// <summary>
         /// 名称
@@ -22,7 +22,12 @@ namespace Models
         /// </summary>
         public string Description { get; set; }
 
-        public string ImgUrl { get; set; }
+
+
+        /// <summary>
+        /// Navigation Property
+        /// </summary>
+        public virtual ICollection<Img> Imgs { get; set; } 
 
     }
 }
