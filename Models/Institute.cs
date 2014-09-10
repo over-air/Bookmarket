@@ -6,20 +6,16 @@ using System.Threading.Tasks;
 
 namespace Models
 {
-    /// <summary>
-    /// 专业
-    /// </summary>
-    public class Major
+    public class Institute
     {
         public int ID { get; set; }
 
         /// <summary>
-        /// 专业名称
+        /// 学院名称
         /// </summary>
         public string Name { get; set; }
 
-        public int InstituteID { get; set; }
-        public virtual Institute Institute { get; set; }
+        public virtual ICollection<Major> Majors { get; set; } 
 
     }
 }

@@ -6,6 +6,27 @@ using System.Threading.Tasks;
 
 namespace Models
 {
+
+    public enum Protype:int
+    {
+        /// <summary>
+        /// 九成新
+        /// </summary>
+        Ninenew=0,
+        /// <summary>
+        /// 六成新
+        /// </summary>
+        Sixnew,
+        /// <summary>
+        /// 三成新
+        /// </summary>
+        Threenew,
+        /// <summary>
+        /// 学霸型
+        /// </summary>
+        Art
+    }
+
     /// <summary>
     /// 商品详情
     /// </summary>
@@ -22,7 +43,10 @@ namespace Models
         /// </summary>
         public string Description { get; set; }
 
-
+        /// <summary>
+        /// 等级（新旧程度）
+        /// </summary>
+        public Protype Protype { get; set; }
 
         /// <summary>
         /// Navigation Property

@@ -34,6 +34,6 @@ namespace Models
 
         public int OrderID { get; set; }
         public virtual Order Order { get; set; }
-
+        
     }
 }
