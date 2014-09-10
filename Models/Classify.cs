@@ -45,7 +45,7 @@ namespace Models
     }
 
     /// <summary>
-    /// 产品（书本）的分类
+    /// 产品（书本）的分类  测试
     /// </summary>
     public class Classify
     {
