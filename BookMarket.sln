@@ -1,8 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.21005.1
-MinimumVisualStudioVersion = 10.0.40219.1
+# Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookMarket", "BookMarket\BookMarket.csproj", "{95925B50-841F-4AD8-9A40-6E66D389776C}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookMarket.Tests", "BookMarket.Tests\BookMarket.Tests.csproj", "{7CFE5493-0B4D-4BF2-91B7-DDDA05739B08}"
