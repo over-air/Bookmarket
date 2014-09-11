@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace Models
 {
     /// <summary>
-    /// 单个订单
+    /// 单个订单，订单详情
     /// </summary>
     public class Orderinfo
     {
@@ -33,7 +33,7 @@ namespace Models
         public virtual Product Product { get; set; }
 
         public int OrderID { get; set; }
-        public virtual Order Order { get; set; }
+        public virtual FinalOrder Order { get; set; }
         
     }
 }
