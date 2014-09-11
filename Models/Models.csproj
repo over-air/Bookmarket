@@ -42,7 +42,7 @@
     <Compile Include="Address.cs" />
     <Compile Include="Classify.cs" />
     <Compile Include="Institute.cs" />
-    <Compile Include="FinalOrder.cs" />
+    <Compile Include="Order.cs" />
     <Compile Include="Orderinfo.cs">
       <SubType>Code</SubType>
     </Compile>

@@ -27,9 +27,9 @@ namespace Models
     }
 
     /// <summary>
-    /// 最终订单，List<Orderinfo>
+    /// 最终订单
     /// </summary>
-    public class FinalOrder
+    public class Order
     {
         public int ID { get; set; }
 
