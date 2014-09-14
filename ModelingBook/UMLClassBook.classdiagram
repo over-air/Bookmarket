@@ -64,9 +64,6 @@
           <property Id="2b186113-c8c6-4dd4-868e-db98215fa5f0" name="Rank" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <elementDefinition Id="07431b05-9ec3-4378-8c6e-3c248b7192dc" />
           </property>
-          <property Id="1c29ae01-0007-4523-8584-1a4eff1c6b56" name="MajorId" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="ac481b61-5529-45c9-83aa-72d7646d5b29" />
-          </property>
         </ownedAttributesInternal>
       </class>
     </logicalClassDesignerModelHasTypes>

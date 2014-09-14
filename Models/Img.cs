@@ -11,7 +11,7 @@ namespace Models
     /// </summary>
     public class Img
     {
-        public int ID { get; set; }
+        public int Id { get; set; }
         /// <summary>
         /// 图片相对路径
         /// </summary>
@@ -20,7 +20,7 @@ namespace Models
         /// <summary>
         /// 外键
         /// </summary>
-        public int ProductID { get; set; }
+        public int ProductId { get; set; }
 
         /// <summary>
         /// Navigation Properties

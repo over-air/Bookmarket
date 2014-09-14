@@ -174,17 +174,6 @@
             isDerivedUnion="false"
             aggregation="None"
             isComposite="false" />
-          <property
-            Id="ac481b61-5529-45c9-83aa-72d7646d5b29"
-            name="MajorId"
-            isLeaf="false"
-            isStatic="false"
-            isReadOnly="false"
-            isUnique="false"
-            isDerived="false"
-            isDerivedUnion="false"
-            aggregation="None"
-            isComposite="false" />
         </ownedAttributesInternal>
       </class>
     </packageHasNamedElement>

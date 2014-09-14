@@ -11,7 +11,7 @@ namespace Models
     /// </summary>
     public class Orderinfo
     {
-        public int ID { get; set; }
+        public int Id { get; set; }
 
         public int Count { get; set; }
 
@@ -27,12 +27,12 @@ namespace Models
         /// <summary>
         /// 不作为外键
         /// </summary>
-        public int UserID { get; set; }
+        public int UserId { get; set; }
 
-        public int ProductID { get; set; }
+        public int ProductId { get; set; }
         public virtual Product Product { get; set; }
 
-        public int OrderID { get; set; }
+        public int OrderId { get; set; }
         public virtual Order Order { get; set; }
         
     }

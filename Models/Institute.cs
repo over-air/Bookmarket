@@ -8,7 +8,7 @@ namespace Models
 {
     public class Institute
     {
-        public int ID { get; set; }
+        public int Id { get; set; }
 
         /// <summary>
         /// 学院名称

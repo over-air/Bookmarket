@@ -52,12 +52,12 @@ namespace Models
         /// <summary>
         /// 产品ID
         /// </summary>
-        public int ProductID { get; set; }
+        public int ProductId { get; set; }
 
         /// <summary>
         /// 专业ID
         /// </summary>
-        public int MajorID { get; set; }
+        public int MajorId { get; set; }
 
         /// <summary>
         /// 年级

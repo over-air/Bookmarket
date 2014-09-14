@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace Models
 {
 
-    public enum Protype:int
+    public enum Rank:int
     {
         /// <summary>
         /// 九成新
@@ -46,12 +46,14 @@ namespace Models
         /// <summary>
         /// 等级（新旧程度）
         /// </summary>
-        public Protype Protype { get; set; }
+        public Rank Rank { get; set; }
 
         /// <summary>
         /// Navigation Property
         /// </summary>
-        public virtual ICollection<Img> Imgs { get; set; } 
+        public virtual ICollection<Img> Imgs { get; set; }
+
+        public virtual ProDetail ProDetail { get; set; }
 
     }
 }

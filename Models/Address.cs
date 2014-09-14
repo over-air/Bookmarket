@@ -20,7 +20,7 @@ namespace Models
         /// <summary>
         /// 外键
         /// </summary>
-        public int UserID { get; set; }
+        public int UserId { get; set; }
         public virtual User User { get; set; }
 
         public virtual Order Order { get; set; }

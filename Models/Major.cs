@@ -18,7 +18,7 @@ namespace Models
         /// </summary>
         public string Name { get; set; }
 
-        public int InstituteID { get; set; }
+        public int InstituteId { get; set; }
         public virtual Institute Institute { get; set; }
 
     }

@@ -31,7 +31,7 @@ namespace Models
     /// </summary>
     public class Order
     {
-        public int ID { get; set; }
+        public int Id { get; set; }
 
         public ICollection<Orderinfo> Orderinfos { get; set; } 
 
@@ -45,7 +45,7 @@ namespace Models
         /// </summary>
         public SendTime SendTime { get; set; }
 
-        public int AddressID { get; set; }
+        public int AddreessId { get; set; }
         public virtual Address Address { get; set; }
 
     }

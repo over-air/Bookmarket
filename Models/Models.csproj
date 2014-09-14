@@ -40,6 +40,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Address.cs" />
+    <Compile Include="BookMajor.cs" />
     <Compile Include="Classify.cs" />
     <Compile Include="Institute.cs" />
     <Compile Include="Order.cs" />
@@ -49,6 +50,7 @@
     <Compile Include="OrderStatus.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="ProDetail.cs" />
     <Compile Include="Product.cs" />
     <Compile Include="Img.cs" />
     <Compile Include="Major.cs" />
