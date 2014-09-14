@@ -30,7 +30,14 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.6.0.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\packages\EntityFramework.6.0.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -39,23 +46,28 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Address.cs" />
-    <Compile Include="BookMajor.cs" />
-    <Compile Include="Classify.cs" />
-    <Compile Include="Institute.cs" />
-    <Compile Include="Order.cs" />
-    <Compile Include="Orderinfo.cs">
+    <Compile Include="Model\Address.cs" />
+    <Compile Include="Model\BookMajor.cs" />
+    <Compile Include="Model\Classify.cs" />
+    <Compile Include="Model\Institute.cs" />
+    <Compile Include="Model\Order.cs" />
+    <Compile Include="Model\Orderinfo.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="OrderStatus.cs">
+    <Compile Include="Model\OrderStatus.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="ProDetail.cs" />
-    <Compile Include="Product.cs" />
-    <Compile Include="Img.cs" />
-    <Compile Include="Major.cs" />
+    <Compile Include="Model\ProDetail.cs" />
+    <Compile Include="Model\Product.cs" />
+    <Compile Include="Model\Img.cs" />
+    <Compile Include="Model\Major.cs" />
+    <Compile Include="BookContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="User.cs" />
+    <Compile Include="Model\User.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
