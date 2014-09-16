@@ -33,7 +33,7 @@ namespace Models
     /// </summary>
     public class Product
     {
-        public int ID { get; set; }
+        public int Id { get; set; }
 
         /// <summary>
         /// 名称

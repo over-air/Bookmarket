@@ -2,7 +2,7 @@
 {
     public class Address
     {
-        public int ID { get; set; }
+        public int Id { get; set; }
 
         /// <summary>
         /// 订单详细地址（校内详细地址，不与人名挂钩）

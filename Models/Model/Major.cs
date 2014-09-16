@@ -5,7 +5,7 @@
     /// </summary>
     public class Major
     {
-        public int ID { get; set; }
+        public int Id { get; set; }
 
         /// <summary>
         /// 专业名称

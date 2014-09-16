@@ -1,4 +1,6 @@
-﻿namespace Models.Model
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace Models.Model
 {
     public enum Grade
     {
@@ -46,6 +48,7 @@
         /// <summary>
         /// 产品ID
         /// </summary>
+        [Key]
         public int ProductId { get; set; }
 
         /// <summary>

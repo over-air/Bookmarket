@@ -1,7 +1,10 @@
-﻿namespace Models.Model
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace Models.Model
 {
     public class BookMajor
     {
+        [Key]
         public int ProductId { get; set; }
 
         public int MajorId { get; set; }
