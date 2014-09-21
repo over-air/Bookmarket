@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Models.Model
 {
@@ -49,6 +50,7 @@ namespace Models.Model
         /// 产品ID
         /// </summary>
         [Key]
+        [ForeignKey("Product")]
         public int ProductId { get; set; }
 
         /// <summary>
@@ -64,6 +66,11 @@ namespace Models.Model
         /// 学期
         /// </summary>
         public Term Term { get; set; }
+
+
+        public virtual Product Product { get; set; }
+
+        public virtual Major Major { get; set; }
 
     }
 }

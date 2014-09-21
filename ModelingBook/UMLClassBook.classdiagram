@@ -164,6 +164,32 @@
             </relationshipOwnedElementsInternal>
             <elementDefinition Id="58c314e6-8519-4f91-800d-7bbdab3c0be8" />
           </association>
+          <association Id="de73ce69-651a-44a5-a711-e55ef3d2a2be" isDerived="false" sourceEndRoleName="Order" targetEndRoleName="Address" isLeaf="false" isAbstract="false">
+            <classMoniker Id="f42ef0ae-9bef-4acd-b76b-e9df8ed4f708" LastKnownName="Address" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="20506160-0ecb-48ae-a867-48d6be40120a" name="Order" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString Id="07dcbed9-6852-49f8-92cb-faaffbac1605" name="Lower" value="n">
+                      <elementDefinition Id="6cda993e-4989-420c-9d07-97ce17e1b4ee" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="eb607a86-76cb-4b3a-89c7-7c36d1b370a2" name="Upper" value="n">
+                      <elementDefinition Id="02b7545f-b3be-421a-8a11-010324504111" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="1e816ab0-f874-47fc-8a29-5d962b785cd5" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="2f6596b6-d44a-4c9e-8fef-cfd2cbe5c596" name="Address" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="f28f88ff-07a8-461c-a388-111664f58938" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="2b9fcf64-f10b-4b23-8a95-faf2ff60b2bc" />
+          </association>
         </targetEnds>
         <ownedAttributesInternal>
           <property Id="8ce9e4d5-e55e-4e0c-bfa0-c8ea48ac140d" name="Price" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
@@ -174,6 +200,9 @@
           </property>
           <property Id="669a4d1f-fd8d-43f4-91db-cfaeb19df513" name="Id" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <elementDefinition Id="322ba49c-3628-4f4e-b79b-d1870717f24e" />
+          </property>
+          <property Id="da3da25a-6d2a-4470-91c6-eeda3e27754d" name="Addressd" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="d410bb84-b3b3-42f0-95fc-3ed73465c3d3" />
           </property>
         </ownedAttributesInternal>
       </class>
@@ -228,6 +257,16 @@
           </property>
           <property Id="78105b11-f5e1-41d3-b1a9-496799621e2e" name="Detials" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <elementDefinition Id="68013745-0275-49f3-af40-acfa251f4a6f" />
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="f42ef0ae-9bef-4acd-b76b-e9df8ed4f708" name="Address" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="2d76db6b-20f1-435d-9881-ce69d4be2a12" />
+        <ownedAttributesInternal>
+          <property Id="48a721d7-f18b-4e7e-b9b5-86847661d4bf" name="Id" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="28edf328-ee90-4e08-abbb-213ff03a1ced" />
           </property>
         </ownedAttributesInternal>
       </class>

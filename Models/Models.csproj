@@ -47,7 +47,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Model\Address.cs" />
-    <Compile Include="Model\BookMajor.cs" />
     <Compile Include="Model\Classify.cs" />
     <Compile Include="Model\Institute.cs" />
     <Compile Include="Model\Order.cs" />
