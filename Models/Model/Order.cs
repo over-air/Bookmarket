@@ -32,7 +32,7 @@ namespace Models.Model
     {
         public int Id { get; set; }
 
-        public ICollection<Orderinfo> Orderinfos { get; set; } 
+        //public ICollection<Orderinfo> Orderinfos { get; set; } 
 
         /// <summary>
         /// 最终订单生成时间

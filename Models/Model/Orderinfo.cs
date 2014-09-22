@@ -29,7 +29,9 @@ namespace Models.Model
         public virtual Product Product { get; set; }
 
         public int OrderId { get; set; }
-        public virtual Order Order { get; set; }
+
+        //斩断外键联系
+        //public virtual Order Order { get; set; }
         
     }
 }
