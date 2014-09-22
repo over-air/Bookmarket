@@ -61,6 +61,7 @@
     <Compile Include="Model\Img.cs" />
     <Compile Include="Model\Major.cs" />
     <Compile Include="BookContext.cs" />
+    <Compile Include="Model\Review.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Model\User.cs" />
   </ItemGroup>

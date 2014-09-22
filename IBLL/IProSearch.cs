@@ -25,5 +25,11 @@ namespace IBLL
         /// <returns></returns>
         IEnumerable<Product> GetProbyTerm(int instituteId, int grade, int term);
 
+        /// <summary>
+        /// 推荐商品（右栏显示）
+        /// </summary>
+        /// <returns></returns>
+        IEnumerable<Product> GetProRecom();
+
     }
 }

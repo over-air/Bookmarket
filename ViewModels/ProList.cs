@@ -13,7 +13,7 @@ namespace ViewModels
     /// </summary>
     class ProList
     {
-        private IEnumerable<Product> products; 
+        private IEnumerable<Product> _products; 
 
         public ProList(){}
 
@@ -23,7 +23,7 @@ namespace ViewModels
         /// <param name="instituteId"></param>
         public ProList(int instituteId)
         {
-            
+            _products = null;
         }
 
         /// <summary>
