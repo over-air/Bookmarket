@@ -9,7 +9,7 @@ namespace Models.Model
     /// <summary>
     /// 评论列表
     /// </summary>
-    class Review
+    public class Review
     {
         public int Id { get; set; }
 

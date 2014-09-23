@@ -40,6 +40,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="HomePage.cs" />
+    <Compile Include="ProDetails.cs" />
     <Compile Include="ProList.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
