@@ -26,6 +26,8 @@ namespace Models
         public DbSet<ProDetail> ProDetails { get; set; }
         public DbSet<Product> Products { get; set; }
         public DbSet<User> Users { get; set; }
+        public DbSet<SubCategory> SubCategories { get; set; }
+        public DbSet<Recommend> Recommends { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {

@@ -23,6 +23,10 @@ namespace Models
         /// </summary>
         Threenew,
         /// <summary>
+        /// 旧书
+        /// </summary>
+        Old,
+        /// <summary>
         /// 学霸型
         /// </summary>
         Art

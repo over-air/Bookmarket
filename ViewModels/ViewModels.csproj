@@ -39,6 +39,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ConditionItems.cs" />
     <Compile Include="HomePage.cs" />
     <Compile Include="ProDetails.cs" />
     <Compile Include="ProList.cs" />

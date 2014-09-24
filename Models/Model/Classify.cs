@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Models.Model
 {
-    public enum Grade
+    public enum Grade:int
     {
         /// <summary>
         /// 大一
@@ -35,7 +35,7 @@ namespace Models.Model
         PgThree
     }
 
-    public enum Term
+    public enum Term:int
     {
         One=0,
         Two
@@ -59,6 +59,11 @@ namespace Models.Model
         public int MajorId { get; set; }
 
         /// <summary>
+        /// 学科Id
+        /// </summary>
+        public int SubCategoryId { get; set; }
+
+        /// <summary>
         /// 年级
         /// </summary>
         public Grade Grade{ get; set; }
@@ -71,6 +76,8 @@ namespace Models.Model
         public virtual Product Product { get; set; }
 
         public virtual Major Major { get; set; }
+
+        public virtual SubCategory SubCategory { get; set; }
 
     }
 }

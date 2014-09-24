@@ -7,10 +7,12 @@ using System.Threading.Tasks;
 namespace IBLL
 {
     /// <summary>
-    /// 二级搜索条件
+    /// 复杂搜索条件？？？
     /// </summary>
     public abstract class SearchPrm
     {
+        
+        //学院选择
         //价格、销量（当库存数量足够时）
     }
 }

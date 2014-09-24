@@ -7,7 +7,7 @@ using Models;
 
 namespace IBLL
 {
-    interface IProSearch
+    public interface IProSearch
     {
         /// <summary>
         /// 模糊搜索
