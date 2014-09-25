@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -11,7 +13,11 @@ namespace Models.Model
     /// </summary>
     public class Recommend
     {
+        public int Id { get; set; }
+
         public int ProductId { get; set; }
+
+        public int UserId { get; set; }
 
         /// <summary>
         /// 推荐理由
@@ -19,6 +25,8 @@ namespace Models.Model
         public string RcmdText { get; set; }
 
         public virtual Product Product { get; set; }
+
+        public virtual User User { get; set; }
 
     }
 }

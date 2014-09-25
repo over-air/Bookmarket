@@ -60,5 +60,7 @@ namespace Models
 
         public virtual ProDetail ProDetail { get; set; }
 
+        public virtual ICollection<Recommend> Recommends { get; set; } 
+
     }
 }
