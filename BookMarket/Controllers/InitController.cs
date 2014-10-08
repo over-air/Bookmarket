@@ -5,11 +5,11 @@ using System.Web;
 using System.Web.Mvc;
 using Models;
 
-namespace BookMarket.Models
+namespace BookMarket.Controllers
 {
-    public class TestController : Controller
+    public class InitController : Controller
     {
-        BookContext db=new BookContext();
+        BookContext db = new BookContext();
         //
         // GET: /Test/
         public ActionResult Index()
@@ -17,5 +17,6 @@ namespace BookMarket.Models
             var test = db.Products.ToList();
             return View();
         }
+
 	}
 }

@@ -11,7 +11,7 @@ namespace ViewModels
     /// <summary>
     /// 商品详情
     /// </summary>
-    class ProDetails
+    public class ProDetails
     {
         /// <summary>
         /// 商品具体介绍信息

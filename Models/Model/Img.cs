@@ -12,6 +12,11 @@
         public string Url { get; set; }
 
         /// <summary>
+        /// 图片附加说明
+        /// </summary>
+        public string Illustration { get; set; }
+
+        /// <summary>
         /// 外键
         /// </summary>
         public int ProductId { get; set; }
