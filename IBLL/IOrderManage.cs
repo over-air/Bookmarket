@@ -10,7 +10,7 @@ namespace IBLL
     /// <summary>
     /// 订单逻辑处理
     /// </summary>
-    interface IOrderManage
+    public interface IOrderManage
     {
         /// <summary>
         /// 插入订单详情（加入购物车）
