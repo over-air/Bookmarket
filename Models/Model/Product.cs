@@ -33,11 +33,24 @@ namespace Models
     }
 
     /// <summary>
+    /// 商品类型
+    /// </summary>
+    public enum Typeof : int
+    {
+        /// <summary>
+        /// 书
+        /// </summary>
+        Book=1
+    }
+
+    /// <summary>
     /// 商品详情
     /// </summary>
     public class Product
     {
         public int Id { get; set; }
+
+        public Typeof Typeof { get; set; }
 
         /// <summary>
         /// 名称
