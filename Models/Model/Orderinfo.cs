@@ -9,6 +9,9 @@ namespace Models.Model
     {
         public int Id { get; set; }
 
+        /// <summary>
+        /// 商品个数
+        /// </summary>
         public int Count { get; set; }
 
         /// <summary>

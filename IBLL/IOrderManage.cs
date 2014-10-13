@@ -16,13 +16,12 @@ namespace IBLL
         /// 插入订单详情（加入购物车）
         /// </summary>
         /// <param name="orderinfo"></param>
-        void OrderInsert(Orderinfo orderinfo);
-
+        int OrderInsert(Orderinfo orderinfo);
 
         /// <summary>
         /// 提交订单(新建订单order，更新orderinfo)
         /// </summary>
-        void SubmitOrder(int addressId,IEnumerable<Orderinfo> orderinfos);
+        int SubmitOrder(int addressId,int sendtime,IEnumerable<Orderinfo> orderinfos);
 
     }
 }

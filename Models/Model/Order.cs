@@ -5,7 +5,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Models.Model
 {
-    public enum SendTime
+    public enum SendTime:int
     {
         /// <summary>
         /// 上午（9:00～11:00）
