@@ -26,7 +26,7 @@ namespace BLL
 
         /// <summary>
         /// 根据专业信息查找
-        /// </summary>s
+        /// </summary>
         /// <param name="majorId">专业</param>
         /// <param name="grade">年级，可以为0，即不考虑</param>
         /// <param name="term">学期，可以为0，即不考虑</param>

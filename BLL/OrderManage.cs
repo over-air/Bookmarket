@@ -73,8 +73,5 @@ namespace BLL
             }
             return order.Id;
         }
-
-        
-
     }
 }
