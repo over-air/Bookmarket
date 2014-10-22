@@ -1,4 +1,5 @@
-﻿using System.Linq;
+﻿using System.Drawing;
+using System.Linq;
 using System.Web.Mvc;
 using Models;
 using ViewModels;
@@ -7,6 +8,7 @@ namespace BookMarket.Controllers
 {
     public class CommonController : Controller
     {
+        BookContext db=new BookContext();
         //
         // GET: /Common/
         //public ActionResult Index()
@@ -18,12 +20,10 @@ namespace BookMarket.Controllers
         /// 图片轮询分部视图
         /// </summary>
         /// <returns></returns>
-        public ActionResult PartialImgs()
+        public ActionResult PartialImgs(int productId)
         {
-            var db = new BookContext();
-            var imgs = db.Imgs.ToList();
-            var model = new Images {Imgs = imgs};
-            return PartialView(model);
+            var image = new Images(productId);
+            return PartialView(image);
         }
 
 	}
