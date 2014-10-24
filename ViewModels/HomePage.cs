@@ -33,7 +33,7 @@ namespace ViewModels
         /// <summary>
         ///商品列表
         /// </summary>
-        public IEnumerable<Product> Products { get; set; }
+        public IEnumerable<Product> Products{get;set;}
 
         /// <summary>
         /// 右栏新品展示
