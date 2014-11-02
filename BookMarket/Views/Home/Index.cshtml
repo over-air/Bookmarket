@@ -1,4 +1,6 @@
-﻿@model ViewModels.HomePage
+﻿@using BLL
+@using Models
+@model ViewModels.HomePage
 @{
     ViewBag.Title = "Index";
     Layout = "~/Views/Shared/_Layout.cshtml";
@@ -14,17 +16,24 @@
                 首页
             </div>
         </div>
-        <div class="row" style="background-color: red;height: 30px;">
+        <div class="row" style="height: 30px;">
             <div class="col-sm-12">
                 <ul>
                     @foreach (var item in Model.Products)
                     {
-                        <li>
-                            <a>
-                                <img/></a>
-                            <p></p>
-                            <p></p>
+                        
+                        <li class="col-sm-3">
+                            <a href="~/ProDetail/ProDetail/@item.Id">
+                                <img src="/Content/Image/@item.Showurl" />
 
+                                <p>描述： @item.Description</p>
+                                <p>价格： @item.Cost</p>
+                                @{
+                                    var promanage = new ProManage();
+                                    var floorprice = promanage.GetFinallPrice((int) Rank.Old, item.Cost);
+                                }
+                                <p>最低价：@floorprice</p>
+                            </a>
                         </li>
                     }
                 </ul>    
@@ -32,5 +41,7 @@
         </div>
         
     </div>
-    <div class="col-sm-2"></div>
+    <div class="col-sm-2">
+        
+    </div>
 </div>

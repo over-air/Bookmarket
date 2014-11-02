@@ -175,6 +175,7 @@
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Image\sample.jpg" />
+    <Content Include="Content\Image\small.jpg" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -235,6 +236,14 @@
     <None Include="Project_Readme.html" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\BLL\BLL.csproj">
+      <Project>{2476402A-C8AF-4DCB-A65B-D2E1C9E7D64C}</Project>
+      <Name>BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\IBLL\IBLL.csproj">
+      <Project>{D4D0E9C9-AD59-4E23-946A-41847DEB6D35}</Project>
+      <Name>IBLL</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Models\Models.csproj">
       <Project>{0A00105B-326A-4DD1-95F5-A376D81D3D00}</Project>
       <Name>Models</Name>

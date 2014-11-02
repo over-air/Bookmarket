@@ -1,4 +1,5 @@
-﻿using System.Drawing;
+﻿using System;
+using System.Drawing;
 using System.Linq;
 using System.Web.Mvc;
 using Models;
@@ -20,9 +21,11 @@ namespace BookMarket.Controllers
         /// 图片轮询分部视图
         /// </summary>
         /// <returns></returns>
-        public ActionResult PartialImgs(int productId)
+        public ActionResult PartialImgs(string productId)
         {
-            var image = new Images(productId);
+            productId = "1";
+            if (string.IsNullOrEmpty(productId)) return View("Error");
+            var image = new Images(Convert.ToInt32(productId));
             return PartialView(image);
         }
 

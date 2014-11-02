@@ -43,6 +43,7 @@
     <Compile Include="IOrderManage.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="IProManage.cs" />
     <Compile Include="IProSearch.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SearchPrm.cs" />

@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using BLL;
+using IBLL;
 using Models;
 using Models.Model;
 
@@ -13,7 +15,20 @@ namespace ViewModels
     /// </summary>
     public class HomePage
     {
-        public HomePage() { }
+        BookContext db=new BookContext();
+
+        /// <summary>
+        /// 默认热卖筛选
+        /// </summary>
+        public HomePage()
+        {
+            Majors = db.Majors.ToList();
+            Products = db.Products.ToList();//筛选方式待定
+            NewProducts = db.Products.Take(5);
+            //IProManage promanage=new ProManage();//接口的用法？？？
+            //promanage.GetProPrice(Products);
+            //promanage.GetProPrice(NewProducts);
+        }
 
         /// <summary>
         /// 选择专业的热卖筛选

@@ -14,6 +14,11 @@ namespace Models.Model
         public int Id { get; set; }
 
         /// <summary>
+        /// 商品id
+        /// </summary>
+        public int ProductId { get; set; }
+
+        /// <summary>
         /// 评论详情
         /// </summary>
         public string Content { get; set; }

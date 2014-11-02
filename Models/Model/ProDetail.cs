@@ -3,6 +3,9 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Models.Model
 {
+    /// <summary>
+    /// 商品详情内容描述（待续）
+    /// </summary>
     public class ProDetail
     {
         [Key]

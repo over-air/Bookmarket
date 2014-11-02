@@ -15,13 +15,13 @@ namespace Models
         /// </summary>
         Ninenew=0,
         /// <summary>
-        /// 六成新
+        /// 七成新
         /// </summary>
-        Sixnew,
+        Sevennew,
         /// <summary>
-        /// 三成新
+        /// 五成新
         /// </summary>
-        Threenew,
+        Fivenew,
         /// <summary>
         /// 旧书
         /// </summary>
@@ -56,6 +56,12 @@ namespace Models
         /// 名称
         /// </summary>
         public string Name { get; set; }
+
+        /// <summary>
+        /// 原价
+        /// </summary>
+        public decimal Cost { get; set; }
+
         /// <summary>
         /// 顶端描述
         /// </summary>
@@ -64,7 +70,12 @@ namespace Models
         /// <summary>
         /// 等级（新旧程度）
         /// </summary>
-        public Rank Rank { get; set; }
+       /// public Rank Rank { get; set; }
+
+        /// <summary>
+        /// （搜索结果）展示图片url
+        /// </summary>
+        public string Showurl { get; set; }
 
         /// <summary>
         /// Navigation Property

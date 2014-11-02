@@ -63,6 +63,7 @@
     <Compile Include="BookContext.cs" />
     <Compile Include="Model\Recommend.cs" />
     <Compile Include="Model\Review.cs" />
+    <Compile Include="Model\Store.cs" />
     <Compile Include="Model\SubCategory.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Model\User.cs" />

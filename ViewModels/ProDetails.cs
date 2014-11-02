@@ -13,6 +13,17 @@ namespace ViewModels
     /// </summary>
     public class ProDetails
     {
+        BookContext db=new BookContext();
+        /// <summary>
+        /// 获取一个商品详情
+        /// </summary>
+        /// <param name="proid"></param>
+        public ProDetails(int proid)
+        {
+            Product = db.Products.Find(proid);
+
+        }
+
         /// <summary>
         /// 商品具体介绍信息
         /// </summary>
