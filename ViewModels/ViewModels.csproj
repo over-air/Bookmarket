@@ -40,6 +40,8 @@
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -50,6 +52,7 @@
     <Compile Include="ConditionItems.cs" />
     <Compile Include="HomePage.cs" />
     <Compile Include="Images.cs" />
+    <Compile Include="models\RankList.cs" />
     <Compile Include="ProDetails.cs" />
     <Compile Include="ProList.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

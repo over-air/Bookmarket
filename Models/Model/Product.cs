@@ -50,6 +50,9 @@ namespace Models
     {
         public int Id { get; set; }
 
+        /// <summary>
+        /// 商品类型
+        /// </summary>
         public Typeof Typeof { get; set; }
 
         /// <summary>
@@ -58,7 +61,12 @@ namespace Models
         public string Name { get; set; }
 
         /// <summary>
-        /// 原价
+        /// 书本原始定价
+        /// </summary>
+        public decimal Valuation { get; set; }
+
+        /// <summary>
+        /// 价格
         /// </summary>
         public decimal Cost { get; set; }
 

@@ -19,7 +19,7 @@ namespace BLL
         /// <summary>
         /// 加入购物车(顺利返回插入id)
         /// </summary>
-        /// <param name="orderinfo"></param>
+        /// <param name="orderinfo">包含用户id和具体商品实体</param>
         public int OrderInsert(Orderinfo orderinfo)
         {
             db.Orderinfos.Add(orderinfo);
@@ -33,6 +33,17 @@ namespace BLL
                 return 0;
             }
             return orderinfo.Id;
+        }
+
+        /// <summary>
+        /// 直接购买
+        /// </summary>
+        /// <param name="orderinfo"></param>
+        /// <returns></returns>
+        public int DirectBuy(Orderinfo orderinfo)
+        {
+
+            return 1;
         }
 
         /// <summary>
