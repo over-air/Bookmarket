@@ -50,7 +50,6 @@ namespace Models.Model
         /// 产品ID
         /// </summary>
         [Key]
-        [ForeignKey("Product")]
         public int ProductId { get; set; }
 
         /// <summary>
@@ -73,7 +72,8 @@ namespace Models.Model
         public Term Term { get; set; }
 
 
-        public virtual Product Product { get; set; }
+        //斩断联系，用left join
+        //public virtual Product Product { get; set; }
 
         public virtual Major Major { get; set; }
 

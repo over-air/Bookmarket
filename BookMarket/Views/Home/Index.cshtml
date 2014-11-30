@@ -23,7 +23,7 @@
                     {
                         
                         <li class="col-sm-3">
-                            <a href="~/ProDetail/ProDetail/@item.Id">
+                            <a href="@Url.Action("ProDetail","Prodetail",new{proid=item.Id})">
                                 <img src="/Content/Image/@item.Showurl" />
 
                                 <p>描述： @item.Description</p>

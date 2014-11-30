@@ -18,8 +18,6 @@ namespace IBLL
         /// <param name="orderinfo"></param>
         int OrderInsert(Orderinfo orderinfo);
 
-        int DirectBuy(Orderinfo orderinfo);
-
         /// <summary>
         /// 提交订单(新建订单order，更新orderinfo)
         /// </summary>

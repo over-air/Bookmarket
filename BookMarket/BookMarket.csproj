@@ -159,6 +159,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\BackStageController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\InitController.cs" />
     <Compile Include="Controllers\ProdetailController.cs" />
@@ -176,6 +177,7 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Image\sample.jpg" />
     <Content Include="Content\Image\small.jpg" />
+    <Content Include="Content\Image\zanwu.jpg" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -224,6 +226,8 @@
     <Content Include="Views\Prodetail\ProDetail.cshtml" />
     <Content Include="Views\Common\PartialImgs.cshtml" />
     <Content Include="Views\Init\Index.cshtml" />
+    <Content Include="Views\Shared\_LayoutBack.cshtml" />
+    <Content Include="Views\BackStage\ProManage.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

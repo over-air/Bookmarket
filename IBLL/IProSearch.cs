@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -17,13 +18,11 @@ namespace IBLL
         IEnumerable<Product> GetProbySearch(string searchstr);
 
         /// <summary>
-        /// 根据详细信息查找
+        /// 根据专业信息查找
         /// </summary>
-        /// <param name="instituteId">专业</param>
-        /// <param name="grade">年级，可以为0，即不考虑</param>
-        /// <param name="term">学期，可以为0，即不考虑</param>
+        /// <param name="ht">majorid:专业,grade:年纪（0不考虑）,term:学期（0不考虑）</param>
         /// <returns></returns>
-        IEnumerable<Product> GetProbyTerm(int instituteId, int grade, int term);
+        IEnumerable<Product> GetProbyTerm(Hashtable ht);
 
         /// <summary>
         /// 推荐商品（右栏显示）

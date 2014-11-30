@@ -7,6 +7,11 @@ namespace Models.Model
     /// </summary>
     public class Orderinfo
     {
+        public Orderinfo ()
+        {
+            Dtime = DateTime.Now;
+        }
+
         public int Id { get; set; }
 
         /// <summary>

@@ -22,6 +22,9 @@ namespace BLL
         /// <param name="orderinfo">包含用户id和具体商品实体</param>
         public int OrderInsert(Orderinfo orderinfo)
         {
+
+            orderinfo.UserId = 1;//Convert.ToInt32(HttpContext.Current.Session["userid"]);
+            orderinfo.Status = OrderStatus.Created;
             db.Orderinfos.Add(orderinfo);
             try
             {
@@ -35,16 +38,6 @@ namespace BLL
             return orderinfo.Id;
         }
 
-        /// <summary>
-        /// 直接购买
-        /// </summary>
-        /// <param name="orderinfo"></param>
-        /// <returns></returns>
-        public int DirectBuy(Orderinfo orderinfo)
-        {
-
-            return 1;
-        }
 
         /// <summary>
         /// 提交订单(新建订单order，更新orderinfo)

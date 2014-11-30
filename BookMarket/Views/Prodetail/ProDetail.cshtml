@@ -8,7 +8,7 @@
     <div class="row">
         <div class="col-md-6 col-lg-5">
             <div style="height: 450px;">
-                @Html.Action("PartialImgs","Common",new{Model.Product.Id})
+                @Html.Action("PartialImgs", "Common", new { productId=Model.Product.Id })
             </div>
         </div>
         <div class="col-md-6 col-lg-7">
@@ -20,12 +20,17 @@
                 <p>定价：@Model.Product.Valuation</p>
                 <p>价格：@Model.Product.Cost</p>
                 <p>种类：
-                @foreach (var rank in Model.RankList.ProRanks)
-                {
-                    <span>
-                        类别：@rank.Rank,价格：@rank.Price,库存：@rank.Count
-                    </span>
-                }
+                    @foreach (var rank in Model.RankList.ProRanks)
+                    {
+                        <span>
+                            类别：@rank.Rank,价格：@rank.Price,库存：@rank.Count
+                        </span>
+                    }
+                </p>
+                <p>购买数量：
+                    <input type="button" value="-" onclick="minus()"/>
+                    <input type="text" id="buynum" value="1" onchange="checkbuynum();"/>
+                    <input type="button" value="+" onclick="plus()"/>
                 </p>
                 <span></span>
                 <input type="button" class="btn btn-primary" value="直接购买"/>
@@ -40,23 +45,44 @@
         </div>
     </div>
 </div>
-
+<input type="hidden" id="hiderank" name="hiderank"/>
 
 
 <script type="text/javascript">
-    //直接购买
-    function SubmitOrder() {
-        
+    window.onload(function() {
+        //初始化事件，等级选择、hiderank赋值
+    });
+
+    function minus() {
+        var num = jQuery("#buynum").val();
+        if (num > 1) num--;
+        jQuery("#buynum").val(num);
+    }
+
+    function plus() {
+        var num = jQuery("#buynum").val();
+        num++;
+        jQuery("#buynum").val(num);
+    }
+
+    function checkbuynum() {
+        var regex = new RegExp("^[1-9]/d*$");
+        if (!regex.test(jQuery("#buynum").val())) {
+            alert("请输入正确的购买数量");
+        }
+    }
+
+    //前台验证
+    function checkinput() {
+        //具体验证一下购买数量是否合乎库存
     }
 
     //加入购物车
     function OrderInsert() {
         var orderinfo = {
-            //Count:1,
-            //OrderId:1,
-            //ProductId:1,
-            //Status:1,
-            //UserId:1
+            Count:jQuery("#buynum").val(),
+            ProductId:'@Model.Product.Id',
+            Status:1//jQuery("#hiderank").val()
         };
         jQuery.ajax({
             type: "post",
@@ -65,6 +91,7 @@
             dataType: "json",
             success:function(data) {
                 if (data <= 0) alert("操作失败！");
+                else alert("添加成功！");
             }
         });
     }

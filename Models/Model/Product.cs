@@ -61,7 +61,7 @@ namespace Models
         public string Name { get; set; }
 
         /// <summary>
-        /// 书本原始定价
+        /// 原始定价
         /// </summary>
         public decimal Valuation { get; set; }
 
@@ -81,7 +81,7 @@ namespace Models
        /// public Rank Rank { get; set; }
 
         /// <summary>
-        /// （搜索结果）展示图片url
+        /// （搜索结果,推荐）展示图片url
         /// </summary>
         public string Showurl { get; set; }
 

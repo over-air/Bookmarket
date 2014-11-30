@@ -53,6 +53,30 @@ namespace BookMarket.Controllers
             {
                 db.Imgs.Add(img);
             }
+            var users = new List<User>()
+            {
+                new User() {Name = "max"},
+                new User() {Name = "Test"}
+            };
+            foreach (var user in users)
+            {
+                db.Users.Add(user);
+            }
+
+            var stores = new List<Store>()
+            {
+                new Store() {ProductId = 1, Rank = Rank.Art, Price = 10, Count = 10},
+                new Store() {ProductId = 1, Rank = Rank.Art, Price = 9, Count = 20},
+                new Store() {ProductId = 1, Rank = Rank.Art, Price = 8, Count = 20},
+                new Store() {ProductId = 1, Rank = Rank.Art, Price = 7, Count = 10},
+                new Store() {ProductId = 1, Rank = Rank.Art, Price = 6, Count = 10}
+
+            };
+            foreach (var store in stores)
+            {
+                db.Stores.Add(store);
+            }
+
             db.SaveChanges();
 
 

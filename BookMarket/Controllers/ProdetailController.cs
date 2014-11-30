@@ -17,12 +17,18 @@ namespace BookMarket.Controllers
         IOrderManage orderManage=new OrderManage();
         //
         // GET: /Prodetail/
-        public ActionResult ProDetail( string proid)
+        public ActionResult ProDetail(int? proid)
         {
-            proid = "1";
-            if (string.IsNullOrEmpty(proid)) return View("Error");
-            var prodetail = new ProDetails(Convert.ToInt32(proid));
-            return View(prodetail);
+            try
+            {
+                var prodetail = new ProDetails(Convert.ToInt32(proid));
+                return View(prodetail);
+            }
+            catch (Exception ex)
+            {
+                BLL.Common.ReportEx(System.Web.HttpContext.Current.Request.Url.AbsolutePath, "宝贝不存在" + ex.Message, System.Web.HttpContext.Current.Session["userid"].ToString());
+                return View("Error");//宝贝已不存在
+            }
         }
 
         /// <summary>
@@ -36,7 +42,14 @@ namespace BookMarket.Controllers
         }
 
         //直接购买
-        //public ActionResult SubmitOrder()
+        public ActionResult DirectBuy(Orderinfo orderinfo)
+        {
+            if (orderManage.OrderInsert(orderinfo) > 0)
+            {
+                return View("Error"); //指向订单页面
+            }
+            return View("ProDetail");
+        }
 
 
 
