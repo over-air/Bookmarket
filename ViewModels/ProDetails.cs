@@ -3,10 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Models;
-using Models.Model;
 using ViewModels.models;
-using Rank = Models.Rank;
 
 namespace ViewModels
 {
@@ -15,23 +12,23 @@ namespace ViewModels
     /// </summary>
     public class ProDetails
     {
-        BookContext db=new BookContext();
+        //BookContext db=new BookContext();
         /// <summary>
         /// 获取一个商品详情
         /// </summary>
         /// <param name="proid"></param>
         public ProDetails(int proid)
         {
-            Product = db.Products.Find(proid);
-            var proranks = new List<ProRank>();
-            int count = 0;
-            foreach (var store in db.Stores.Where(m=>m.ProductId==proid))
-            {
-                var rank = new ProRank() {Count = store.Count, Price = store.Price,Rank = store.Rank};
-                proranks.Add(rank);
-                count += store.Count;
-            }
-            RankList = new RankList() {ProRanks = proranks, Sumcount = count};
+            //Product = db.Products.Find(proid);
+            //var proranks = new List<ProRank>();
+            //int count = 0;
+            //foreach (var store in db.Stores.Where(m=>m.ProductId==proid))
+            //{
+            //    var rank = new ProRank() {Count = store.Count, Price = store.Price,Rank = store.Rank};
+            //    proranks.Add(rank);
+            //    count += store.Count;
+            //}
+            //RankList = new RankList() {ProRanks = proranks, Sumcount = count};
         }
 
         /// <summary>

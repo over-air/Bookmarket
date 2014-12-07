@@ -86,7 +86,7 @@
         };
         jQuery.ajax({
             type: "post",
-            url:'@Url.Action("AddOrder","Prodetail")',
+            url:'',@*'@Url.Action("AddOrder","Prodetail")'*@
             data: orderinfo,
             dataType: "json",
             success:function(data) {

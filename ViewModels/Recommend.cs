@@ -6,18 +6,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Models.Model
+namespace ViewModels
 {
     /// <summary>
     /// 推荐商品
     /// </summary>
     public class Recommend
     {
-        public int Id { get; set; }
-
         public int ProductId { get; set; }
 
-        //为什么用userid
+        //？？？为什么用userid
         //public int UserId { get; set; }
 
         /// <summary>
@@ -25,9 +23,8 @@ namespace Models.Model
         /// </summary>
         public string RcmdText { get; set; }
 
-        public virtual Product Product { get; set; }
+        public Product Product { get; set; }
 
-        //public virtual User User { get; set; }
 
     }
 }

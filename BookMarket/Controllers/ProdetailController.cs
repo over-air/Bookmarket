@@ -6,7 +6,6 @@ using System.Web.Mvc;
 using BLL;
 using IBLL;
 using Models;
-using Models.Model;
 using ViewModels;
 
 namespace BookMarket.Controllers
@@ -36,20 +35,20 @@ namespace BookMarket.Controllers
         /// </summary>
         /// <param name="orderinfo"></param>
         /// <returns></returns>
-        public ActionResult AddOrder(Orderinfo orderinfo)
-        {
-            return Json(orderManage.OrderInsert(orderinfo));
-        }
+        //public ActionResult AddOrder(Orderinfo orderinfo)
+        //{
+        //    return Json(orderManage.OrderInsert(orderinfo));
+        //}
 
         //直接购买
-        public ActionResult DirectBuy(Orderinfo orderinfo)
-        {
-            if (orderManage.OrderInsert(orderinfo) > 0)
-            {
-                return View("Error"); //指向订单页面
-            }
-            return View("ProDetail");
-        }
+        //public ActionResult DirectBuy(Orderinfo orderinfo)
+        //{
+        //    if (orderManage.OrderInsert(orderinfo) > 0)
+        //    {
+        //        return View("Error"); //指向订单页面
+        //    }
+        //    return View("ProDetail");
+        //}
 
 
 
