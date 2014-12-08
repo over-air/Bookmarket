@@ -5,8 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using BLL;
 using IBLL;
-using Models;
-using Models.Model;
+using ViewModels;
 
 namespace ViewModels
 {
@@ -15,16 +14,16 @@ namespace ViewModels
     /// </summary>
     public class HomePage
     {
-        BookContext db=new BookContext();
+        //BookContext db=new BookContext();
 
         /// <summary>
         /// 默认热卖筛选
         /// </summary>
         public HomePage()
         {
-            Majors = db.Majors.ToList();
-            Products = db.Products.ToList();//筛选方式待定
-            NewProducts = db.Products.Take(5);
+            ////Majors = db.Majors.ToList();
+            ////Products = db.Products.ToList();//筛选方式待定
+            ////NewProducts = db.Products.Take(5);
             //IProManage promanage=new ProManage();//接口的用法？？？
             //promanage.GetProPrice(Products);
             //promanage.GetProPrice(NewProducts);
