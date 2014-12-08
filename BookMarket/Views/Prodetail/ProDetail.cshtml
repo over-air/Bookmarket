@@ -1,4 +1,4 @@
-﻿@model ViewModels.ProDetails
+﻿﻿@model ViewModels.ProDetails
 @{
     ViewBag.Title = "商品详情";
     Layout = "~/Views/Shared/_Layout.cshtml";
@@ -49,7 +49,7 @@
 
 
 <script type="text/javascript">
-    window.onload(function() {
+    window.onload(function () {
         //初始化事件，等级选择、hiderank赋值
     });
 
@@ -80,20 +80,19 @@
     //加入购物车
     function OrderInsert() {
         var orderinfo = {
-            Count:jQuery("#buynum").val(),
-            ProductId:'@Model.Product.Id',
-            Status:1//jQuery("#hiderank").val()
+            Count: jQuery("#buynum").val(),
+            ProductId: '@Model.Product.Id',
+            Status: 1//jQuery("#hiderank").val()
         };
         jQuery.ajax({
             type: "post",
-            url:'',@*'@Url.Action("AddOrder","Prodetail")'*@
+            url: '',@*'@Url.Action("AddOrder","Prodetail")'*@
             data: orderinfo,
             dataType: "json",
-            success:function(data) {
+            success: function (data) {
                 if (data <= 0) alert("操作失败！");
                 else alert("添加成功！");
             }
         });
     }
 </script>
-
