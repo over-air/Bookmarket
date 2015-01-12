@@ -50,7 +50,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ConditionItems.cs" />
-    <Compile Include="HomePage.cs" />
+    <Compile Include="Front\HomePage.cs" />
+    <Compile Include="Front\FrontProduct.cs" />
+    <Compile Include="Front\Rank.cs" />
     <Compile Include="Images.cs" />
     <Compile Include="Img.cs" />
     <Compile Include="Institute.cs" />
@@ -60,26 +62,23 @@
     <Compile Include="OrderStatus.cs" />
     <Compile Include="ProDetail.cs" />
     <Compile Include="ProDetails.cs" />
-    <Compile Include="Product.cs" />
+    <Compile Include="BackStore\ProductStore.cs" />
     <Compile Include="ProList.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Recommend.cs" />
     <Compile Include="Review.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\BLL\BLL.csproj">
-      <Project>{2476402A-C8AF-4DCB-A65B-D2E1C9E7D64C}</Project>
-      <Name>BLL</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\IBLL\IBLL.csproj">
-      <Project>{D4D0E9C9-AD59-4E23-946A-41847DEB6D35}</Project>
-      <Name>IBLL</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Models\Models.csproj">
+      <Project>{0a00105b-326a-4dd1-95f5-a376d81d3d00}</Project>
+      <Name>Models</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

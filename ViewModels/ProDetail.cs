@@ -1,5 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using ViewModels.Front;
 
 namespace ViewModels
 {
@@ -14,7 +15,7 @@ namespace ViewModels
 
         public string Details { get; set; }
 
-        public Product Product { get; set; }
+        public FrontProduct Product { get; set; }
 
     }
 }

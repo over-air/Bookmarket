@@ -7,29 +7,7 @@ using System.Threading.Tasks;
 namespace ViewModels
 {
 
-    public enum Rank:int
-    {
-        /// <summary>
-        /// 九成新
-        /// </summary>
-        Ninenew=0,
-        /// <summary>
-        /// 七成新
-        /// </summary>
-        Sevennew,
-        /// <summary>
-        /// 五成新
-        /// </summary>
-        Fivenew,
-        /// <summary>
-        /// 旧书
-        /// </summary>
-        Old,
-        /// <summary>
-        /// 学霸型
-        /// </summary>
-        Art
-    }
+   
 
     /// <summary>
     /// 商品类型

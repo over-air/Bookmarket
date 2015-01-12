@@ -3,19 +3,15 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using BLL;
-using IBLL;
-using ViewModels;
+using Models;
 
-namespace ViewModels
+namespace ViewModels.Front
 {
     /// <summary>
     /// 首页的model
     /// </summary>
     public class HomePage
     {
-        //BookContext db=new BookContext();
-
         /// <summary>
         /// 默认热卖筛选
         /// </summary>
@@ -47,12 +43,12 @@ namespace ViewModels
         /// <summary>
         ///商品列表
         /// </summary>
-        public IEnumerable<Product> Products{get;set;}
+        public IEnumerable<FrontProduct> Products{get;set;}
 
         /// <summary>
         /// 右栏新品展示
         /// </summary>
-        public IEnumerable<Product> NewProducts { get; set; }
+        public IEnumerable<FrontProduct> NewProducts { get; set; }
  
 
 

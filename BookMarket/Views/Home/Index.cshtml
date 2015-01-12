@@ -1,6 +1,4 @@
-﻿@using BLL
-@using Models
-@model ViewModels.HomePage
+﻿@model ViewModels.Front.HomePage
 @{
     ViewBag.Title = "Index";
     Layout = "~/Views/Shared/_Layout.cshtml";
@@ -23,16 +21,12 @@
                     {
                         
                         <li class="col-sm-3">
-                            <a href="@Url.Action("ProDetail","Prodetail",new{proid=item.Id})">
-                                <img src="/Content/Image/@item.Showurl" />
+                            <a href="@Url.Action("ProDetail","Prodetail",new{proid=item.Product.Id})">
+                                <img src="/Content/Image/@item.Product.Showurl" />
 
-                                <p>描述： @item.Description</p>
-                                <p>价格： @item.Cost</p>
-                                @{
-                                    var promanage = new ProManage();
-                                    var floorprice = promanage.GetFinallPrice((int) Rank.Old, item.Cost);
-                                }
-                                <p>最低价：@floorprice</p>
+                                <p>描述： @item.Product.Description</p>
+                                <p>价格： @item.Product.Cost</p>
+                                <p>最低价：@item.FloorPrice</p>
                             </a>
                         </li>
                     }

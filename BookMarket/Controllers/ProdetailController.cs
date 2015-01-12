@@ -3,17 +3,17 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
-using BLL;
-using IBLL;
-using Models;
+
+﻿using IService;
+﻿using Models;
 using ViewModels;
 
 namespace BookMarket.Controllers
 {
     public class ProdetailController : Controller
     {
-        BookContext db = new BookContext();
-        IOrderManage orderManage = new OrderManage();
+        //BookContext db = new BookContext();
+        //IOrderManage orderManage = new OrderManage();
         //
         // GET: /Prodetail/
         public ActionResult ProDetail(int? proid)

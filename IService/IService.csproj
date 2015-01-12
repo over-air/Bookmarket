@@ -40,6 +40,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class1.cs" />
+    <Compile Include="IFrontManage.cs" />
     <Compile Include="IOrderManage.cs" />
     <Compile Include="IProManage.cs" />
     <Compile Include="IProSearch.cs" />

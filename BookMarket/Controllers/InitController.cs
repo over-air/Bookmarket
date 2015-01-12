@@ -26,14 +26,14 @@ namespace BookMarket.Controllers
         {
             List<Product> products=new List<Product>()
             {
-                new Product(){Typeof = Typeof.Book,Name = "测试商品1",Cost = 12,Description = "这是一条测试商品的描述1",Showurl = "small.jpg"},
-                new Product(){Typeof = Typeof.Book,Name = "测试商品2",Cost = 14,Description = "这是一条测试商品的描述2",Showurl = "small.jpg"},
-                new Product(){Typeof = Typeof.Book,Name = "测试商品3",Cost = 16,Description = "这是一条测试商品的描述3",Showurl = "small.jpg"},
-                new Product(){Typeof = Typeof.Book,Name = "测试商品4",Cost = 18,Description = "这是一条测试商品的描述4",Showurl = "small.jpg"},
-                new Product(){Typeof = Typeof.Book,Name = "测试商品5",Cost = 20,Description = "这是一条测试商品的描述5",Showurl = "small.jpg"},
-                new Product(){Typeof = Typeof.Book,Name = "测试商品6",Cost = 21,Description = "这是一条测试商品的描述6",Showurl = "small.jpg"},
-                new Product(){Typeof = Typeof.Book,Name = "测试商品7",Cost = 22,Description = "这是一条测试商品的描述7",Showurl = "small.jpg"},
-                new Product(){Typeof = Typeof.Book,Name = "测试商品8",Cost = 23,Description = "这是一条测试商品的描述8",Showurl = "small.jpg"},
+                new Product(){Typeid = 1,Name = "测试商品1",Cost = 12,Description = "这是一条测试商品的描述1",Showurl = "small.jpg"},
+                new Product(){Typeid = 1,Name = "测试商品2",Cost = 14,Description = "这是一条测试商品的描述2",Showurl = "small.jpg"},
+                new Product(){Typeid = 1,Name = "测试商品3",Cost = 16,Description = "这是一条测试商品的描述3",Showurl = "small.jpg"},
+                new Product(){Typeid = 1,Name = "测试商品4",Cost = 18,Description = "这是一条测试商品的描述4",Showurl = "small.jpg"},
+                new Product(){Typeid = 1,Name = "测试商品5",Cost = 20,Description = "这是一条测试商品的描述5",Showurl = "small.jpg"},
+                new Product(){Typeid = 1,Name = "测试商品6",Cost = 21,Description = "这是一条测试商品的描述6",Showurl = "small.jpg"},
+                new Product(){Typeid = 1,Name = "测试商品7",Cost = 22,Description = "这是一条测试商品的描述7",Showurl = "small.jpg"},
+                new Product(){Typeid = 1,Name = "测试商品8",Cost = 23,Description = "这是一条测试商品的描述8",Showurl = "small.jpg"},
             };
             foreach (var product in products)
             {

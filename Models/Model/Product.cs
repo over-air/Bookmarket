@@ -35,13 +35,13 @@ namespace Models
     /// <summary>
     /// 商品类型
     /// </summary>
-    public enum Typeof : int
-    {
-        /// <summary>
-        /// 书
-        /// </summary>
-        Book=1
-    }
+    //public enum Typeof : int
+    //{
+    //    /// <summary>
+    //    /// 书
+    //    /// </summary>
+    //    Book=1
+    //}
 
     /// <summary>
     /// 商品详情
@@ -51,9 +51,9 @@ namespace Models
         public int Id { get; set; }
 
         /// <summary>
-        /// 商品类型
+        /// 商品类型（category的id，不用外键）
         /// </summary>
-        public Typeof Typeof { get; set; }
+        public int Typeid { get; set; }
 
         /// <summary>
         /// 名称
@@ -76,7 +76,7 @@ namespace Models
         public string Description { get; set; }
 
         /// <summary>
-        /// 等级（新旧程度）
+        /// 等级（新旧程度,放在store库存中）
         /// </summary>
        /// public Rank Rank { get; set; }
 
@@ -92,7 +92,8 @@ namespace Models
 
         public virtual ProDetail ProDetail { get; set; }
 
-        public virtual ICollection<Recommend> Recommends { get; set; } 
+        //什么用
+        //public virtual ICollection<Recommend> Recommends { get; set; } 
 
     }
 }
