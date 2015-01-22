@@ -17,7 +17,7 @@ namespace BookMarket.Controllers
         public ActionResult ProManage( int? id)
         {
             var productstore = new ProductStore();
-            if (id.HasValue) productstore = _proManage.GetProbyId((int) id);
+            //if (id.HasValue) productstore = _proManage.GetProbyId((int) id);
             return View("ProManage",productstore);
         }
 

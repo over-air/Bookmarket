@@ -4,62 +4,84 @@
     Layout = "~/Views/Shared/_LayoutBack.cshtml";
 }
 
+<script type="text/javascript">
+    KindEditor.ready(function (K) {
+        var editor = K.create("#prodetail", {
+            uploadJson: '@Url.Content("~/Content/kindeditor/asp.net/upload_json.ashx")',
+            fileManagerJson: '@Url.Content("~/Content/kindeditor/asp.net/file_manager_json.ashx")',
+            allowFileManager: true
+        });
+
+        K('#image1').click(function () {
+            editor.loadPlugin('image', function () {
+                editor.plugin.imageDialog({
+                    imageUrl: K('#url1').val(),
+                    clickFn: function (url, title, width, height, border, align) {
+                        K('#url1').val(url);
+                        editor.hideDialog();
+                        jQuery("#imgid").attr("src", 'localhost' + url);
+                    }
+                });
+            });
+        });
+    });
+</script>
+
 <div class="row">
     <div class="col-md-12">
         @using (Html.BeginForm("SaveProduct", "BackStage", FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
         {
             @Html.AntiForgeryToken()
             @*@Html.ValidationSummary(true)*@
-            <div class="form-control">
+            <div class="form-group">
                 @Html.Label("名称", new { @class = "col-md-2 control-label" })
                 <div class="col-md-10">
                     @Html.TextBoxFor(m => m.Product.Name, new { @class = "form-control" })
                     @Html.ValidationMessageFor(m => m.Product.Name)
                 </div>
             </div>
-            <div class="form-control">
+            <div class="form-group">
                 @Html.Label("描述", new { @class = "col-md-2 control-label" })
                 <div class="col-md-10">
                     @Html.TextBoxFor(m => m.Product.Description, new { @class = "form-control" })
                     @Html.ValidationMessageFor(m => m.Product.Description)
                 </div>
             </div>
-            <div class="form-control">
+            <div class="form-group">
                 @Html.Label("类目", new { @class = "col-md-2 control-label" })
                 <div class="col-md-10">
                     @Html.TextBoxFor(m => m.Product.Typeid, new { @class = "form-control" })
                 </div>
             </div>
-            <div class="form-control">
+            <div class="form-group">
                 @Html.Label("价格", new { @class = "col-md-2 control-label" })
                 <div class="col-md-10">
                     @Html.TextBoxFor(m => m.Product.Cost, new { @class = "form-control" })
                 </div>
             </div>
-            <div class="form-control">
+            <div class="form-group">
                 @Html.Label("定价", new { @class = "col-md-2 control-label" })
                 <div class="col-md-10">
                     @Html.TextBoxFor(m => m.Product.Cost, new { @class = "form-control" })
                 </div>
             </div>
-            <div class="form-control">
+            <div class="form-group">
                 @Html.Label("封面图片", new { @class = "col-md-2 control-label" })
                 <div class="col-md-10">
                     上传图片控件
                 </div>
             </div>
-            <div class="form-control">
+            <div class="form-group">
                 @Html.Label("名称", new { @class = "col-md-2 control-label" })
                 <div class="col-md-10">
                     @Html.TextBoxFor(m => m.Product.Name, new { @class = "form-control" })
                     @Html.ValidationMessageFor(m => m.Product.Name)
                 </div>
             </div>
-            <div class="form-control">
+            <div class="form-group">
                 @Html.Label("宝贝描述", new { @class = "col-md-2 control-label" })
                 <div class="col-md-10">
-                    @Html.TextBoxFor(m => m.Product.Name, new { @class = "form-control",placeholder="富文本编辑器" })
-                    @Html.ValidationMessageFor(m => m.Product.ProDetail.Details)
+                    <textarea id="prodetail" name="prodetail"></textarea>
                 </div>
             </div>
             <div class="form-group">

@@ -25,7 +25,7 @@ namespace BookMarket.Controllers
             }
             catch (Exception ex)
             {
-                BLL.Common.ReportEx(System.Web.HttpContext.Current.Request.Url.AbsolutePath, "宝贝不存在" + ex.Message, System.Web.HttpContext.Current.Session["userid"].ToString());
+                //BLL.Common.ReportEx(System.Web.HttpContext.Current.Request.Url.AbsolutePath, "宝贝不存在" + ex.Message, System.Web.HttpContext.Current.Session["userid"].ToString());
                 return View("Error");//宝贝已不存在
             }
         }
