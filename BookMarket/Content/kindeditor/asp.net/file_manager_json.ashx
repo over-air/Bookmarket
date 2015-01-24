@@ -21,12 +21,12 @@ public class FileManager : IHttpHandler
 {
 	public void ProcessRequest(HttpContext context)
 	{
-		String aspxUrl = context.Request.Path.Substring(0, context.Request.Path.LastIndexOf("/") + 1);
+		//String aspxUrl = context.Request.Path.Substring(0, context.Request.Path.LastIndexOf("/") + 1);
 
 		//根目录路径，相对路径
         String rootPath = ConfigurationManager.AppSettings["urlroute"];
 		//根目录URL，可以指定绝对路径，比如 http://www.yoursite.com/attached/
-        String rootUrl = aspxUrl + ConfigurationManager.AppSettings["urlroute"];
+        String rootUrl = ConfigurationManager.AppSettings["urlroute"];
 		//图片扩展名
 		String fileTypes = "gif,jpg,jpeg,png,bmp";
 

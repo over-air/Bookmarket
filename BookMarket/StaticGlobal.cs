@@ -6,8 +6,8 @@ using System.Web;
 
 namespace BookMarket
 {
-    public class StaticGlobal
+    public static class StaticGlobal
     {
-        public string Imgroute = ConfigurationManager.AppSettings["imgroute"];
+        //public string Imgroute = ConfigurationManager.AppSettings["imgroute"];
     }
 }

@@ -4,6 +4,11 @@
     Layout = "~/Views/Shared/_LayoutBack.cshtml";
 }
 
+<link rel="stylesheet" href="/Content/kindeditor/themes/default/default.css" />
+<link rel="stylesheet" href="/Content/kindeditor/plugins/code/prettify.css" />
+<script charset="utf-8" src="/Content/kindeditor/kindeditor.js"></script>
+<script charset="utf-8" src="/Content/kindeditor/lang/zh_CN.js"></script>
+<script charset="utf-8" src="/Content/kindeditor/plugins/code/prettify.js"></script>
 <script type="text/javascript">
     KindEditor.ready(function (K) {
         var editor = K.create("#prodetail", {
@@ -12,14 +17,14 @@
             allowFileManager: true
         });
 
-        K('#image1').click(function () {
+        K('#upimg').click(function () {
             editor.loadPlugin('image', function () {
                 editor.plugin.imageDialog({
                     imageUrl: K('#url1').val(),
                     clickFn: function (url, title, width, height, border, align) {
                         K('#url1').val(url);
                         editor.hideDialog();
-                        jQuery("#imgid").attr("src", 'localhost' + url);
+                        jQuery("#imgpre").attr("src",url);
                     }
                 });
             });
@@ -68,7 +73,10 @@
             <div class="form-group">
                 @Html.Label("封面图片", new { @class = "col-md-2 control-label" })
                 <div class="col-md-10">
-                    上传图片控件
+                    <input id="upimg" type="file" />
+                    <div>
+                        <img id="imgpre" class="img-responsive" style="width:300px;height: 300px;" />
+                    </div>
                 </div>
             </div>
             <div class="form-group">

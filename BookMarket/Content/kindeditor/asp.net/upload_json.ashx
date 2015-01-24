@@ -22,13 +22,13 @@ public class Upload : IHttpHandler
 
 	public void ProcessRequest(HttpContext context)
 	{
-		String aspxUrl = context.Request.Path.Substring(0, context.Request.Path.LastIndexOf("/") + 1);
+		//String aspxUrl = context.Request.Path.Substring(0, context.Request.Path.LastIndexOf("/") + 1);
 		
 		//文件保存目录路径
 		String savePath = ConfigurationManager.AppSettings["urlroute"];
 
 		//文件保存目录URL
-        String saveUrl = aspxUrl + ConfigurationManager.AppSettings["urlroute"];//有问题？？？
+        String saveUrl = ConfigurationManager.AppSettings["urlroute"];//有问题？？？
 
 		//定义允许上传的文件扩展名
 		Hashtable extTable = new Hashtable();

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
@@ -17,6 +18,7 @@ namespace BookMarket.Controllers
         public ActionResult ProManage( int? id)
         {
             var productstore = new ProductStore();
+            //ViewBag.imgroute = ConfigurationManager.AppSettings["imgroute"];
             //if (id.HasValue) productstore = _proManage.GetProbyId((int) id);
             return View("ProManage",productstore);
         }
