@@ -40,3 +40,5 @@ input[type="checkbox"].input-validation-error {
 .validation-summary-valid {
     display: none;
 }
+/*wp手机适配*/
+@-ms-viewport{width:auto!important}
